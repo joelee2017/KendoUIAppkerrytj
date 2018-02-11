@@ -15,31 +15,50 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row k-header">
-            <h1>Project Title</h1>
+            <img class="img-responsive " alt="200x200" src="~/Images/Logo_嘉里大榮.png">
             <div id="responsive-panel">
-                <ul id="menu">
-                    <li>Item 1
-                    </li>
-                    <li>Item 2
-                    </li>
-                    <li>Item 3
-                    </li>
-                    <li>Item 4
-                    </li>
-                    <li>Item 5
-                    </li>
-                    <li disabled="disabled">Disabled Item
-                    </li>
-                </ul>
+                <div class="row">
+                    <ul id="menu">
+                        <li>
+                            主控台
+                        </li>
+                        <li>
+                            資料列表
+                            <ul>
+                                <li>線別主檔</li>
+                                <li>車輛主檔</li>
+                                <li>SR司機主檔</li>
+                                <li>客編主檔</li>
+                                <li>外包車主檔</li>
+                            </ul>
+                        </li>
+                        <li>
+                            新增任務
+                        </li>
+                        <li>
+                            調度總表
+                            <ul>
+                                <li>任務列表</li>
+                                <li>車輛運載列表</li>
+                                <li>運能統計</li>
+                                <li>溫度監控</li>
+                                <li>勤務異常</li>
+                                <li>溫度歷程</li>
+                            </ul>
+                        </li>
+                        <li>
+                            系統管理
+                            <ul>
+                                <li>帳號設定</li>
+                                <li>系統日誌</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <button id="configure" class="k-rpanel-toggle k-button k-primary btn-toggle"><span class="k-icon k-i-hbars"></span></button>
         </div>
-    </div>
-
     @RenderBody()
-
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-18 col-md-12">
@@ -47,13 +66,11 @@
             </div>
         </div>
     </div>
-
     <footer class="footer">
         <div class="container-fluid">
             <p class="text-muted">Copyright © @DateTime.Now.Year Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.</p>
         </div>
     </footer>
-
     <script>
         $(document).ready(function () {
             $("#menu").kendoMenu();
